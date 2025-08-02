@@ -401,22 +401,53 @@ h1{
 
 /* ------------ Footer ------------ */
 
+footer{
+    display: flex;
+    justify-content: center;
+    gap: 269px;
+    padding: 64px 0px;
+    background-color: var(--color-neutral-black);
+}
+
+.copyright-container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.copyright-reserved p{
+    color: var(--color-neutral-silver);
+}
+
+.copyright-reserved p:nth-of-type(1){
+    margin-bottom: 8px;
+}
+
+.footer-socials{
+    display: flex;
+    gap: 16px;
+}
+
 .social-icon{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color:rgba(255, 255, 255, 0.1) ;
+    background-color: rgba(255, 255, 255, 0.1);
     padding: 7.47px;
     border-radius: 100%;
     transition: 0.3s;
 }
 
-.social-icon:houver{
-    background-color: var(--color-primary);
-    transform: translateY(-5px);
+.social-icon:hover{
+    background-color: var(--color-primary); 
+    transform: translateY(-5px);   
 }
 
-.social-icon a{
+.social-icon img{
+    display: flex;
+}
+
+.footer-navigation{
     display: flex;
     gap: 97px;
 }
@@ -424,35 +455,36 @@ h1{
 .footer-container{
     display: flex;
     flex-direction: column;
-    gap: 24px;    
+    gap: 24px;
 }
 
 .footer-container h2{
     color: var(--color-neutral-white);
     font-size: var(--font-headline-4-size);
 }
+
 .footer-links{
     display: flex;
     flex-direction: column;
     gap: 12px;
-    font-size: var(--font-body-3-size);
+    font-size: var(--font-body-3-size);    
 }
 
 .footer-item{
     text-decoration: none;
-    color: var(--color-neutral-silver);
+    color: var(--color-neutral-silver);     
 }
 
 .footer-links li{
     transition: 0.3s;
 }
 
-.footer-links li:houver{
+.footer-links li:hover{
     transform: translateX(10px);
 }
 
-.footer-item:houver{
-    color: var(--color-primary);
+.footer-item:hover{
+    color: var(--color-primary); 
 }
 
 .footer-container form{
@@ -469,8 +501,7 @@ h1{
 }
 
 .footer-container form input::placeholder{
-    color: #D9DBE1; 
-
+    color: #D9DBE1;
 }
 
 .footer-container form button{
@@ -478,12 +509,13 @@ h1{
     justify-content: center;
     align-items: center;
     padding: 8.5px;
-    background-color: rgba(255, 255, 255, 0.2);  
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 0px 8px 8px 0px;
     cursor: pointer;
+    transition: 0.3s;
 }
 
-.footer-container form button:houver{
+.footer-container form button:hover{
     background-color: var(--color-primary);
 }
 
